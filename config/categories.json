@@ -1,0 +1,182 @@
+{
+    "FOOD": [
+        "nirula s",
+        "royal bite",
+        "swiggy",
+        "taco",
+        "wrap",
+        "zomato",
+        "burger",
+        "cake",
+        "canteen",
+        "chai",
+        "china",
+        "go",
+        "dominos",
+        "dotpe",
+        "eatclub",
+        "eating",
+        "hotel",
+        "hungerbox",
+        "juice",
+        "kfc",
+        "mcdonalds",
+        "nescafe",
+        "food",
+        "98765954"
+    ],
+    "TRANSPORT": [
+        "dmrc",
+        "uber",
+        "ola",
+        "rapido",
+        "metro",
+        "bus",
+        "irctc",
+        "rail",
+        "blusmart",
+        "bablu ku",
+        "delhi me",
+        "dil bhadur",
+        "dilip sah",
+        "divesh",
+        "dl ndrs",
+        "kalu ram",
+        "kamal ki",
+        "kamlesh",
+        "robinson",
+        "the robi",
+        "trachan",
+        "delhi",
+        "dilpr"
+    ],
+    "SHOPPING": [
+        "amazon",
+        "flipkart",
+        "myntra",
+        "ajio",
+        "crosswor",
+        "diamondl",
+        "duke fas",
+        "nykaa",
+        "apple se",
+        "ashutosh",
+        "blue dar",
+        "chandrak",
+        "dhirender",
+        "dhruv  c",
+        "duggal c",
+        "first ch",
+        "blinkit",
+        "grofers",
+        "sari",
+        "zepto"
+    ],
+    "BILLS": [
+        "airtel"
+    ],
+    "SUBSCRIPTION": [
+        "netflix",
+        "spotify",
+        "prime",
+        "hotstar",
+        "youtube",
+        "roux-ros",
+        "salon de",
+        "star ent",
+        "steam",
+        "jiocinema"
+    ],
+    "friends": [
+        "yogesh",
+        "aditya j",
+        "11 am 11",
+        "aadi  na"
+    ],
+    "dad": [
+        "mahesh"
+    ],
+    "miscellaneous": [
+        "chourasi",
+        "aarti",
+        "aastha  ."
+    ],
+    "ignite": [
+        "ashmit c",
+        "bhavya g",
+        "bhavya m",
+        "bhupinde",
+        "brijesh",
+        "cheryl",
+        "daisy",
+        "devish s",
+        "dharmbir",
+        "dhruv an",
+        "divjot",
+        "divya jo",
+        "gunheer",
+        "gunika s",
+        "himanshu",
+        "hiten",
+        "kritika",
+        "manan garg",
+        "mehak garg",
+        "riddhi",
+        "ritesh k",
+        "rohit sood",
+        "suhani s",
+        "tanvi",
+        "ms lavan",
+        "mujeev",
+        "parvez p",
+        "parvinde",
+        "patiala",
+        "rahul so",
+        "rahul ve",
+        "apple me"
+    ],
+    "rent": [
+        "eazypay",
+        "suraj  t",
+        "suraj ku",
+        "suraj pr",
+        "suraj si",
+        "suraj  k",
+        "abdul  g",
+        "abhijeet",
+        "abhikans"
+    ],
+    "feul": [
+        "indian o",
+        "mahendra"
+    ],
+    "stationery": [
+        "vikas",
+        "vikas sood"
+    ],
+    "entertainment": [
+        "ice stat",
+        "pvr"
+    ],
+    "books": [
+        "readers",
+        "baba far",
+        "bikanerw"
+    ],
+    "automotive": [
+        "motor"
+    ],
+    "hospital": [
+        "hosp",
+        "abhilash",
+        "abhiraj",
+        "abhishek",
+        "aditya g"
+    ],
+    "alcohol": [
+        "liquor"
+    ],
+    "unknown": [
+        "abadhesh"
+    ]
+}
