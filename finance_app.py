@@ -81,10 +81,15 @@ def load_data(df: pd.DataFrame):
     df["Date"] = df["Date"].astype(str).str.strip()
     try :
     # Parse YYYY-MM-DD explicitly
-        df["Date"] = pd.to_datetime(
+         df["Date"] = pd.to_datetime(
             df["Date"],
-            format="%Y-%m-%d"
+            dayfirst=True,
+            errors="coerce"
         )
+        # df["Date"] = pd.to_datetime(
+        #     df["Date"],
+        #     format="%Y-%m-%d"
+        # )
     except ValueError as e:
         df["Date"] = pd.to_datetime(
             df["Date"],
