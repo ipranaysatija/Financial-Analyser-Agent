@@ -4,3 +4,4 @@ config/api_key.yaml
 test.ipynb
 test.py
 user_pranay_improved.csv
+.streamlit/

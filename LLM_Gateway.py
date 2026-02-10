@@ -1,4 +1,5 @@
 # import yaml
+import streamlit as st
 from langchain_cohere import ChatCohere, CohereEmbeddings
 # def fetch_api(path='api_key.yaml',key='api_key'):
 #     with open(path, 'r') as file:
@@ -9,7 +10,7 @@ def nexa_ai(model="command-a-03-2025", temp=0,max=50):
     llm = ChatCohere(
         model=model,
         temperature=temp,
-        cohere_api_key=COHERE_KEY,
+        cohere_api_key=st.secrets["COHERE_KEY"]
         max_tokens=max,
         )
     return llm
