@@ -79,12 +79,17 @@ def load_data(df: pd.DataFrame):
 
     # Ensure Date is clean string
     df["Date"] = df["Date"].astype(str).str.strip()
-
+    try :
     # Parse YYYY-MM-DD explicitly
-    df["Date"] = pd.to_datetime(
-        df["Date"],
-        format="%Y-%m-%d"
-    )
+        df["Date"] = pd.to_datetime(
+            df["Date"],
+            format="%Y-%m-%d"
+        )
+    except ValueError as e:
+        df["Date"] = pd.to_datetime(
+            df["Date"],
+            format="%Y-%m-%d"
+        )
 
     # Feature Engineering
     df["Month"] = df["Date"].dt.to_period("M").astype(str)
@@ -433,7 +438,7 @@ if page == "📊 Analytics Dashboard":
         default=sorted(df["Method"].dropna().unique())
     )
 
-    log_debug(f"options: {df["Method"].dropna().unique()}")
+    log_debug(f'options: {df["Method"].dropna().unique()}')
 
     filtered_df = df[
         (df["Date"] >= pd.to_datetime(date_range[0])) &
