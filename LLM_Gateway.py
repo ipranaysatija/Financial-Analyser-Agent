@@ -10,7 +10,7 @@ def nexa_ai(model="command-a-03-2025", temp=0,max=50):
     llm = ChatCohere(
         model=model,
         temperature=temp,
-        cohere_api_key=st.secrets["COHERE_KEY"]
+        cohere_api_key=st.secrets["COHERE_KEY"],
         max_tokens=max,
         )
     return llm
