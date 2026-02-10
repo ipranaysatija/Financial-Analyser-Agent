@@ -1,5 +1,5 @@
 incoming/
-original_data/
+original_data_old/
 config/api_key.yaml
 test.ipynb
 test.py
