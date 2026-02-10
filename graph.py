@@ -205,7 +205,10 @@ def llm_based_classification(state: AgentState):
             continue
         
         for txn in parsed_output:
-            name, method, category, matched_keyword, tag = txn
+            if len(txn):
+                name, method, category, matched_keyword, tag = txn
+            else:
+                print('Can't split txn')
             log_debug(f"mapped{name},{method},{category}")
             unique_transactions.loc[
                 (unique_transactions['Reciever_Sender'] == name) &
