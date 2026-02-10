@@ -270,8 +270,8 @@ if page=="📂 Upload Data":
     # -----------------------------------------------------
     # Load category rules
     # -----------------------------------------------------
-    if os.path.exists("categories.json"):
-        with open("categories.json", "r") as file:
+    if os.path.exists("config/categories.json"):
+        with open("config/categories.json", "r") as file:
             category_options = json.load(file)
     else:
         category_options = {}
@@ -404,7 +404,7 @@ if page=="📂 Upload Data":
                     category_options[final_category].append(merchant_name)
 
                 # Save rules
-                with open("categories.json", "w") as file:
+                with open("config/categories.json", "w") as file:
                     json.dump(category_options, file, indent=4)
 
                 # Save dataframe
