@@ -1,15 +1,15 @@
-import yaml
+# import yaml
 from langchain_cohere import ChatCohere, CohereEmbeddings
-def fetch_api(path='api_key.yaml',key='api_key'):
-    with open(path, 'r') as file:
-        config = yaml.safe_load(file)
-    return config.get(key)
+# def fetch_api(path='api_key.yaml',key='api_key'):
+#     with open(path, 'r') as file:
+#         config = yaml.safe_load(file)
+#     return config.get(key)
 
 def nexa_ai(model="command-a-03-2025", temp=0,max=50):
     llm = ChatCohere(
         model=model,
         temperature=temp,
-        cohere_api_key=fetch_api(),
+        cohere_api_key=COHERE_KEY,
         max_tokens=max,
         )
     return llm
@@ -32,8 +32,8 @@ def nexa_ai(model="command-a-03-2025", temp=0,max=50):
 #     )
 
 #     return completion.choices[0].message.content
-def embedding_model():
-    embeddings = CohereEmbeddings(
-    cohere_api_key=fetch_api(), model="embed-v4.0"
-)
-    return embeddings
+# def embedding_model():
+#     embeddings = CohereEmbeddings(
+#     cohere_api_key=fetch_api(), model="embed-v4.0"
+# )
+#     return embeddings
