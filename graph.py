@@ -68,7 +68,7 @@ def rule_based_classfication(state:AgentState):
     log_header("Starting rule_based_classfication")
     unique_transactions=state['unique_transactions']
 
-    with open('categories.json','r') as file:
+    with open('config/categories.json','r') as file:
         defined_categories=json.load(file)
 
     log_info(f"fetched rules: {defined_categories}")
@@ -243,7 +243,7 @@ def mapper(state: AgentState):
     log_info(f"total mapped:  {count} , tatal mappings:  {len(unique)}")
     # dataset.to_csv('improved.csv')
 
-    with open('categories.json','w') as f:
+    with open('config/categories.json','w') as f:
         json.dump(state['rules'],f)
     log_success("Ingestion Complete")
     return {'dataset':dataset}
