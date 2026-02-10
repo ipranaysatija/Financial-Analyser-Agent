@@ -234,6 +234,7 @@ if page=="📂 Upload Data":
 
 
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            os.makedirs("original_data", exist_ok=True)
             path=f"original_data/{timestamp}_user_{st.session_state.username}_{bank_name}.csv"
             data.to_csv(path)
 
