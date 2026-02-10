@@ -6,7 +6,7 @@ from langchain_core.tools import Tool
 from langchain_cohere import ChatCohere
 from langchain.agents import create_agent
 import json
-
+import os
 class LogColors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
